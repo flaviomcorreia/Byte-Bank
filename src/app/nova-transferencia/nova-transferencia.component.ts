@@ -6,7 +6,13 @@ import { Component } from '@angular/core';
     styleUrls: ['./nova-transferencia.component.scss']
 })
 export class NovaTransferenciaComponent{
+
+  valor = 0
+  destino = 0
+
   transferir(){
     console.log('Solicitada Nova Transeferência')
+    console.log(this.valor)
+    console.log(this.destino)
   }
 }
