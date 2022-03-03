@@ -1,3 +1,4 @@
+import { TransferenciaService } from './../services/transferencia.service';
 import { Component, EventEmitter, Output} from '@angular/core';
 
 @Component({
@@ -10,11 +11,10 @@ export class AppComponent {
   @Output() valoresComErro = new EventEmitter<string>();
 
   title = 'byte_bank';
-  destino = 0;
-  valor = 0;
-  transferencias: any[] = [];
+
+  constructor(private service: TransferenciaService){}
 
   transferir($event:  any){
-    console.log($event);
+    this.service.adicionarTransferencia($event)
   }
 }
