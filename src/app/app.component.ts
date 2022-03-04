@@ -1,20 +1,18 @@
-import { TransferenciaService } from './../services/transferencia.service';
-import { Component, EventEmitter, Output} from '@angular/core';
+import { TransferenciaService } from './services/transferencia.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  title = 'bytebank';
+  transferencias: any[] = [];
 
-  @Output() valoresComErro = new EventEmitter<string>();
+  constructor(private service: TransferenciaService) {}
 
-  title = 'byte_bank';
-
-  constructor(private service: TransferenciaService){}
-
-  transferir($event:  any){
-    this.service.adicionarTransferencia($event)
+  transferir($event) {
+    this.service.adicionar($event).subscribe(x => console.log(x));
   }
 }

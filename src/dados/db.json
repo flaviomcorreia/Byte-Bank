@@ -1,0 +1,40 @@
+{
+  "transferencias": [
+    {
+      "id": 1,
+      "valor": 35,
+      "destino": "1212-1",
+      "data": "2020-11-06t21:34:17.155Z"
+    },
+    {
+      "id": "2",
+      "valor": 40,
+      "destino": "1213-1",
+      "data": "2020-11-06t21:24:10.710Z"
+    },
+    {
+      "closed": false,
+      "observers": [],
+      "isStopped": false,
+      "hasError": false,
+      "thrownError": null,
+      "__isAsync": false,
+      "id": "yB0iYL1"
+    },
+    {
+      "closed": false,
+      "observers": [],
+      "isStopped": false,
+      "hasError": false,
+      "thrownError": null,
+      "__isAsync": false,
+      "id": "pylLxdP"
+    },
+    {
+      "valor": 1231232,
+      "destino": "12346-9",
+      "data": "2022-03-04T17:59:40.424Z",
+      "id": "23XrWld"
+    }
+  ]
+}
